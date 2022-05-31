@@ -1,0 +1,1 @@
+python plot.py results/existing_epc.txt results/neutrino.txt --xlabel "Active users" --ylabel "Initial Attach PCT (ms)" --output_image bursty_initial_attach.png --legends "Existing 5G,Neutrino" --colors "red,gray" --patterns "\/\/\/\/\/\/,,\\\\\/////,.....,--------,====----====,//\\//\\" --w_space 4

@@ -1,0 +1,354 @@
+ASN_MODULE_SRCS=	\
+	ProcedureCode.c	\
+	S1AP-ELEMENTARY-PROCEDURE.c	\
+	InitiatingMessage.c	\
+	SuccessfulOutcome.c	\
+	S1AP-PDU-Types.c	\
+	S1AP-PDU.c	\
+	InitialUeMessage.c	\
+	InitialUEMessage-IEs.c	\
+	DownlinkNasTransport.c	\
+	DownlinkNasTransport-IEs.c	\
+	UplinkNasTransport.c	\
+	UplinkNasTransport-IEs.c	\
+	InitialContextSetupRequest.c	\
+	InitialContextSetupRequest-IEs.c	\
+	InitialContextSetupResponse.c	\
+	InitialContextSetupResponse-IEs.c	\
+	UeCapabilityInfoIndication.c	\
+	UeCapabilityInfoIndication-IEs.c	\
+	HandoverRequired.c	\
+	HandoverRequired-IEs.c	\
+	HandoverRequest.c	\
+	HandoverRequest-IEs.c	\
+	HandoverRequestAcknowledge.c	\
+	HandoverRequestAcknowledge-IEs.c	\
+	HandoverCommand.c	\
+	HandoverCommand-IEs.c	\
+	ENBStatusTransfer.c	\
+	ENBStatusTransfer-IEs.c	\
+	MMEStatusTransfer.c	\
+	MMEStatusTransfer-IEs.c	\
+	HandoverNotify.c	\
+	HandoverNotify-IEs.c	\
+	UeContextReleaseCommand.c	\
+	UeContextReleaseCommand-IEs.c	\
+	UeContextReleaseComplete.c	\
+	UeContextReleaseComplete-IEs.c	\
+	UeContextReleaseRequest.c	\
+	UeContextReleaseRequest-IEs.c	\
+	ENB-UE-S1AP-ID.c	\
+	MME-UE-S1AP-ID.c	\
+	BitRate.c	\
+	E-RAB-ID.c	\
+	QCI.c	\
+	PriorityLevel.c	\
+	NAS-PDU.c	\
+	PLMNidentity.c	\
+	TAC.c	\
+	CellIdentity.c	\
+	TransportLayerAddress.c	\
+	GTP-TEID.c	\
+	EncryptionAlgorithms.c	\
+	IntegrityProtectionAlgorithms.c	\
+	SecurityKey.c	\
+	E-UERadioCapability.c	\
+	LAC.c	\
+	RNC-ID.c	\
+	CI.c	\
+	Source-To-Target-TContainer.c	\
+	Target-To-Source-TContainer.c	\
+	PDCP-SN.c	\
+	HFN.c	\
+	Criticality.c	\
+	ProtocolIE-ID.c	\
+	TAI.c	\
+	EUTRAN-CGI.c	\
+	RRC-Establishment-Cause.c	\
+	UE-Aggregate-Maxbitrate.c	\
+	Pre-emptionCapability.c	\
+	Pre-emptionVulnerability.c	\
+	AllocationAndRetentionPriority.c	\
+	E-RABLevelQoSParameters.c	\
+	E-RABToBeSetupItemCtxtSUReqN.c	\
+	E-RABToBeSetupItemCtxtSUReqIEs.c	\
+	E-RABToBeSetupListCtxtSUReq.c	\
+	UESecurityCapabilities.c	\
+	E-RABSetupListCtxtSUResN.c	\
+	E-RABSetupItemCtxtSUResIEs.c	\
+	E-RABSetupListCtxtSURes.c	\
+	HandoverType.c	\
+	CauseRadioNetwork.c	\
+	CauseTransport.c	\
+	CauseNas.c	\
+	CauseProtocol.c	\
+	CauseMisc.c	\
+	Cause.c	\
+	ENB-ID.c	\
+	Global-ENB-ID.c	\
+	TargeteNB-ID.c	\
+	LAI.c	\
+	CGI.c	\
+	TargetRNC-ID.c	\
+	TargetID.c	\
+	E-RABToBeSetupItemHOReq.c	\
+	E-RABToBeSetupItemHOReqIEs.c	\
+	E-RABToBeSetupListHOReq.c	\
+	SecurityContext.c	\
+	E-RABAdmittedItem.c	\
+	E-RABAdmittedItemIEs.c	\
+	E-RABAdmittedList.c	\
+	E-RABDataForwardingItem.c	\
+	E-RABDataForwardingItemIEs.c	\
+	E-RABSubjecttoDataForwardingList.c	\
+	COUNTvalue.c	\
+	Bearers-SubjectToStatusTransfer-Item.c	\
+	Bearers-SubjectToStatusTransfer-ItemIEs.c	\
+	Bearers-SubjectToStatusTransferList.c	\
+	ENB-StatusTransfer-TransparentContainer.c	\
+	UE-S1AP-ID-pair.c	\
+	UE-S1AP-IDs.c	\
+	ENUB-Item.c	\
+	NAS-Item.c	\
+	TAI-Item.c	\
+	EUTRAN-Item.c	\
+	RRC-Establishment-Item.c	\
+	MME-Item.c	\
+	UE-Aggregate-Maxbitrate-Item.c	\
+	E-RABToBeSetupListCtxtSUReq-Item.c	\
+	UESecurityCapabilities-Item.c	\
+	SecurityKey-Item.c	\
+	E-RABSetupListCtxtSURes-Item.c	\
+	UERadioCapability-Item.c	\
+	HandoverType-Item.c	\
+	Cause-Item.c	\
+	TargetID-Item.c	\
+	Source-To-Target-TContainer-Item.c	\
+	E-RABToBeSetupListHOReq-Item.c	\
+	SecurityContext-Item.c	\
+	E-RABAdmittedList-Item.c	\
+	Target-To-Source-TContainer-Item.c	\
+	E-RABSubjecttoDataForwardingList-Item.c	\
+	ENB-StatusTransfer-TransparentContainer-Item.c	\
+	UE-S1AP-IDs-Item.c
+
+ASN_MODULE_HDRS=	\
+	ProcedureCode.h	\
+	S1AP-ELEMENTARY-PROCEDURE.h	\
+	InitiatingMessage.h	\
+	SuccessfulOutcome.h	\
+	S1AP-PDU-Types.h	\
+	S1AP-PDU.h	\
+	InitialUeMessage.h	\
+	InitialUEMessage-IEs.h	\
+	DownlinkNasTransport.h	\
+	DownlinkNasTransport-IEs.h	\
+	UplinkNasTransport.h	\
+	UplinkNasTransport-IEs.h	\
+	InitialContextSetupRequest.h	\
+	InitialContextSetupRequest-IEs.h	\
+	InitialContextSetupResponse.h	\
+	InitialContextSetupResponse-IEs.h	\
+	UeCapabilityInfoIndication.h	\
+	UeCapabilityInfoIndication-IEs.h	\
+	HandoverRequired.h	\
+	HandoverRequired-IEs.h	\
+	HandoverRequest.h	\
+	HandoverRequest-IEs.h	\
+	HandoverRequestAcknowledge.h	\
+	HandoverRequestAcknowledge-IEs.h	\
+	HandoverCommand.h	\
+	HandoverCommand-IEs.h	\
+	ENBStatusTransfer.h	\
+	ENBStatusTransfer-IEs.h	\
+	MMEStatusTransfer.h	\
+	MMEStatusTransfer-IEs.h	\
+	HandoverNotify.h	\
+	HandoverNotify-IEs.h	\
+	UeContextReleaseCommand.h	\
+	UeContextReleaseCommand-IEs.h	\
+	UeContextReleaseComplete.h	\
+	UeContextReleaseComplete-IEs.h	\
+	UeContextReleaseRequest.h	\
+	UeContextReleaseRequest-IEs.h	\
+	ENB-UE-S1AP-ID.h	\
+	MME-UE-S1AP-ID.h	\
+	BitRate.h	\
+	E-RAB-ID.h	\
+	QCI.h	\
+	PriorityLevel.h	\
+	NAS-PDU.h	\
+	PLMNidentity.h	\
+	TAC.h	\
+	CellIdentity.h	\
+	TransportLayerAddress.h	\
+	GTP-TEID.h	\
+	EncryptionAlgorithms.h	\
+	IntegrityProtectionAlgorithms.h	\
+	SecurityKey.h	\
+	E-UERadioCapability.h	\
+	LAC.h	\
+	RNC-ID.h	\
+	CI.h	\
+	Source-To-Target-TContainer.h	\
+	Target-To-Source-TContainer.h	\
+	PDCP-SN.h	\
+	HFN.h	\
+	Criticality.h	\
+	ProtocolIE-ID.h	\
+	TAI.h	\
+	EUTRAN-CGI.h	\
+	RRC-Establishment-Cause.h	\
+	UE-Aggregate-Maxbitrate.h	\
+	Pre-emptionCapability.h	\
+	Pre-emptionVulnerability.h	\
+	AllocationAndRetentionPriority.h	\
+	E-RABLevelQoSParameters.h	\
+	E-RABToBeSetupItemCtxtSUReqN.h	\
+	E-RABToBeSetupItemCtxtSUReqIEs.h	\
+	E-RABToBeSetupListCtxtSUReq.h	\
+	UESecurityCapabilities.h	\
+	E-RABSetupListCtxtSUResN.h	\
+	E-RABSetupItemCtxtSUResIEs.h	\
+	E-RABSetupListCtxtSURes.h	\
+	HandoverType.h	\
+	CauseRadioNetwork.h	\
+	CauseTransport.h	\
+	CauseNas.h	\
+	CauseProtocol.h	\
+	CauseMisc.h	\
+	Cause.h	\
+	ENB-ID.h	\
+	Global-ENB-ID.h	\
+	TargeteNB-ID.h	\
+	LAI.h	\
+	CGI.h	\
+	TargetRNC-ID.h	\
+	TargetID.h	\
+	E-RABToBeSetupItemHOReq.h	\
+	E-RABToBeSetupItemHOReqIEs.h	\
+	E-RABToBeSetupListHOReq.h	\
+	SecurityContext.h	\
+	E-RABAdmittedItem.h	\
+	E-RABAdmittedItemIEs.h	\
+	E-RABAdmittedList.h	\
+	E-RABDataForwardingItem.h	\
+	E-RABDataForwardingItemIEs.h	\
+	E-RABSubjecttoDataForwardingList.h	\
+	COUNTvalue.h	\
+	Bearers-SubjectToStatusTransfer-Item.h	\
+	Bearers-SubjectToStatusTransfer-ItemIEs.h	\
+	Bearers-SubjectToStatusTransferList.h	\
+	ENB-StatusTransfer-TransparentContainer.h	\
+	UE-S1AP-ID-pair.h	\
+	UE-S1AP-IDs.h	\
+	ENUB-Item.h	\
+	NAS-Item.h	\
+	TAI-Item.h	\
+	EUTRAN-Item.h	\
+	RRC-Establishment-Item.h	\
+	MME-Item.h	\
+	UE-Aggregate-Maxbitrate-Item.h	\
+	E-RABToBeSetupListCtxtSUReq-Item.h	\
+	UESecurityCapabilities-Item.h	\
+	SecurityKey-Item.h	\
+	E-RABSetupListCtxtSURes-Item.h	\
+	UERadioCapability-Item.h	\
+	HandoverType-Item.h	\
+	Cause-Item.h	\
+	TargetID-Item.h	\
+	Source-To-Target-TContainer-Item.h	\
+	E-RABToBeSetupListHOReq-Item.h	\
+	SecurityContext-Item.h	\
+	E-RABAdmittedList-Item.h	\
+	Target-To-Source-TContainer-Item.h	\
+	E-RABSubjecttoDataForwardingList-Item.h	\
+	ENB-StatusTransfer-TransparentContainer-Item.h	\
+	UE-S1AP-IDs-Item.h
+
+ASN_MODULE_HDRS+=OPEN_TYPE.h
+ASN_MODULE_SRCS+=OPEN_TYPE.c
+ASN_MODULE_HDRS+=constr_CHOICE.h
+ASN_MODULE_HDRS+=INTEGER.h
+ASN_MODULE_SRCS+=INTEGER.c
+ASN_MODULE_HDRS+=NativeEnumerated.h
+ASN_MODULE_SRCS+=NativeEnumerated.c
+ASN_MODULE_HDRS+=NativeInteger.h
+ASN_MODULE_SRCS+=NativeInteger.c
+ASN_MODULE_HDRS+=asn_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=asn_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=asn_SET_OF.h
+ASN_MODULE_SRCS+=asn_SET_OF.c
+ASN_MODULE_SRCS+=constr_CHOICE.c
+ASN_MODULE_HDRS+=constr_SEQUENCE.h
+ASN_MODULE_SRCS+=constr_SEQUENCE.c
+ASN_MODULE_HDRS+=constr_SEQUENCE_OF.h
+ASN_MODULE_SRCS+=constr_SEQUENCE_OF.c
+ASN_MODULE_HDRS+=constr_SET_OF.h
+ASN_MODULE_SRCS+=constr_SET_OF.c
+ASN_MODULE_HDRS+=asn_application.h
+ASN_MODULE_SRCS+=asn_application.c
+ASN_MODULE_HDRS+=asn_ioc.h
+ASN_MODULE_HDRS+=asn_system.h
+ASN_MODULE_HDRS+=asn_codecs.h
+ASN_MODULE_HDRS+=asn_internal.h
+ASN_MODULE_SRCS+=asn_internal.c
+ASN_MODULE_HDRS+=asn_random_fill.h
+ASN_MODULE_SRCS+=asn_random_fill.c
+ASN_MODULE_HDRS+=asn_bit_data.h
+ASN_MODULE_SRCS+=asn_bit_data.c
+ASN_MODULE_HDRS+=OCTET_STRING.h
+ASN_MODULE_SRCS+=OCTET_STRING.c
+ASN_MODULE_HDRS+=BIT_STRING.h
+ASN_MODULE_SRCS+=BIT_STRING.c
+ASN_MODULE_SRCS+=asn_codecs_prim.c
+ASN_MODULE_HDRS+=asn_codecs_prim.h
+ASN_MODULE_HDRS+=ber_tlv_length.h
+ASN_MODULE_SRCS+=ber_tlv_length.c
+ASN_MODULE_HDRS+=ber_tlv_tag.h
+ASN_MODULE_SRCS+=ber_tlv_tag.c
+ASN_MODULE_HDRS+=ber_decoder.h
+ASN_MODULE_SRCS+=ber_decoder.c
+ASN_MODULE_HDRS+=der_encoder.h
+ASN_MODULE_SRCS+=der_encoder.c
+ASN_MODULE_HDRS+=constr_TYPE.h
+ASN_MODULE_SRCS+=constr_TYPE.c
+ASN_MODULE_HDRS+=constraints.h
+ASN_MODULE_SRCS+=constraints.c
+ASN_MODULE_HDRS+=xer_support.h
+ASN_MODULE_SRCS+=xer_support.c
+ASN_MODULE_HDRS+=xer_decoder.h
+ASN_MODULE_SRCS+=xer_decoder.c
+ASN_MODULE_HDRS+=xer_encoder.h
+ASN_MODULE_SRCS+=xer_encoder.c
+ASN_MODULE_HDRS+=per_support.h
+ASN_MODULE_SRCS+=per_support.c
+ASN_MODULE_HDRS+=per_decoder.h
+ASN_MODULE_SRCS+=per_decoder.c
+ASN_MODULE_HDRS+=per_encoder.h
+ASN_MODULE_SRCS+=per_encoder.c
+ASN_MODULE_HDRS+=per_opentype.h
+ASN_MODULE_SRCS+=per_opentype.c
+ASN_MODULE_HDRS+=oer_decoder.h
+ASN_MODULE_HDRS+=oer_encoder.h
+ASN_MODULE_HDRS+=oer_support.h
+ASN_MODULE_SRCS+=oer_decoder.c
+ASN_MODULE_SRCS+=oer_encoder.c
+ASN_MODULE_SRCS+=oer_support.c
+ASN_MODULE_SRCS+=OPEN_TYPE_oer.c
+ASN_MODULE_SRCS+=INTEGER_oer.c
+ASN_MODULE_SRCS+=BIT_STRING_oer.c
+ASN_MODULE_SRCS+=OCTET_STRING_oer.c
+ASN_MODULE_SRCS+=NativeInteger_oer.c
+ASN_MODULE_SRCS+=NativeEnumerated_oer.c
+ASN_MODULE_SRCS+=constr_CHOICE_oer.c
+ASN_MODULE_SRCS+=constr_SEQUENCE_oer.c
+ASN_MODULE_SRCS+=constr_SET_OF_oer.c
+
+ASN_MODULE_CFLAGS=
+
+lib_LTLIBRARIES+=libasncodec.la
+libasncodec_la_SOURCES=$(ASN_MODULE_SRCS) $(ASN_MODULE_HDRS)
+libasncodec_la_CPPFLAGS=-I$(top_srcdir)/
+libasncodec_la_CFLAGS=$(ASN_MODULE_CFLAGS)
+libasncodec_la_LDFLAGS=-lm

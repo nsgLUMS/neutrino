@@ -1,0 +1,7 @@
+build/
+.vscode/
+logs/
+out
+a.out
+*.swp
+cpf_config.cfg

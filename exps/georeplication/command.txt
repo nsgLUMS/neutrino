@@ -1,0 +1,1 @@
+python plot.py results/local.txt results/centralized.txt results/geo-aware.txt --xlabel "Time (s)" --ylabel "Median Handover PCT (ms)"  --legends "Edge-site only,Centralized,Geo-aware" --colors "red,blue,gray" --chunks 50 --exp_time 60 --output_image load_balancing_comparision.png

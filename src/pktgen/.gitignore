@@ -1,0 +1,8 @@
+build/
+.vscode/
+results/
+logs/
+pktgen.lck
+results.zip
+config.json.sample
+servers_credentials.json
